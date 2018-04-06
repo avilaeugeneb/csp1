@@ -1,0 +1,80 @@
+/*************************/
+/**                     **/
+/**    Landing Page     **/
+/**                     **/
+/*************************/
+#landing-container {
+	max-width: 1200px;
+	min-height: 100vh;
+	/*background: url("../img/bgnature.jpg");
+	background-size: 100% 100%;*/
+	background-color: #000; /* temporary */
+	display: grid;
+	grid-template-rows: 5vh auto auto auto 5vh;
+	grid-template-areas: 
+	"."
+	"imgland"
+	"enterbtn"
+	"disclaim"
+	"."; 
+	margin: auto;
+	grid-gap: 1vh;
+}
+
+	#landing-image {
+		width: 60%;
+		text-align: center;
+		margin: auto;
+		display: grid;
+		grid-area: imgland;
+	}
+
+		#landing-image img {
+			width: 20vh;
+			margin: 0 auto;
+			border-radius: 100%;
+			box-shadow: 1px 5px 5px gray;
+		}
+
+	.enter-buttons {
+		display: grid;
+		max-width: 70%;
+		margin: auto;
+		grid-template-rows: 1fr 1fr;
+		grid-gap: 2vh;
+		grid-area: enterbtn;
+	}
+
+		#guest-btn {
+
+		}
+
+		#member-btn {
+
+		}
+
+	#panel-disclaimer {
+		width: 75%;
+		margin: auto;
+		grid-area: disclaim;
+	}
+
+/*************************/
+/**                     **/
+/**    Home Page        **/
+/**                     **/
+/*************************/
+
+#logo {
+	width: 3vh;
+}
+
+#main-carousel {
+	width: 90%;
+	margin: auto;
+}
+
+.carousel-inner>.item>img {
+	height: 50vh;
+	margin: auto;
+}
