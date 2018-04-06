@@ -72,6 +72,7 @@
 #main-carousel {
 	width: 90%;
 	margin: auto;
+	margin-bottom: 2vh;
 }
 
 .carousel-inner>.item>img {
