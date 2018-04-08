@@ -6,11 +6,11 @@
 #landing-container {
 	max-width: 1200px;
 	min-height: 100vh;
-	/*background: url("../img/bgnature.jpg");
-	background-size: 100% 100%;*/
+	background: url("../img/bgnature.jpg");
+	background-size: 100% 100%;
 	background-color: #000; /* temporary */
 	display: grid;
-	grid-template-rows: 5vh auto auto auto 5vh;
+	grid-template-rows: 1vh auto auto auto 1vh;
 	grid-template-areas: 
 	"."
 	"imgland"
@@ -19,6 +19,7 @@
 	"."; 
 	margin: auto;
 	grid-gap: 1vh;
+	margin-top: -60px;	
 }
 
 	#landing-image {
@@ -29,19 +30,12 @@
 		grid-area: imgland;
 	}
 
-		#landing-image img {
-			width: 20vh;
-			margin: 0 auto;
-			border-radius: 100%;
-			box-shadow: 1px 5px 5px gray;
-		}
-
 	.enter-buttons {
 		display: grid;
 		max-width: 70%;
 		margin: auto;
 		grid-template-rows: 1fr 1fr;
-		grid-gap: 2vh;
+		grid-gap: 1vh;
 		grid-area: enterbtn;
 	}
 
@@ -61,16 +55,13 @@ body {
 	padding-top: 60px;	
 }
 
-/* #first-row {
-	margin-top: 66vmin;
-} */
-
 #logo {
 	width: 3vh;
 }
 
 .navbar-text a {
 	text-decoration: none;
+	color: #5D5D5D;
 }
 
 #main-carousel {
@@ -84,6 +75,11 @@ body {
 		height: 50vh;
 		margin: auto;
 	}
+
+#member-btns {
+	display: grid;
+	grid-gap: 1vh;
+}
 
 /*************************/
 /**                     **/
