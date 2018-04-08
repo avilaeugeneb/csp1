@@ -1,3 +1,16 @@
+* {
+	font-family: 'Do Hyeon', sans-serif;
+	font-size: 3vh;
+}
+
+body {
+	padding-top: 70px;
+	background: linear-gradient( rgba(15, 175, 167, 0.63), #270303cc ), url("../img/haribon.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+
 /*************************/
 /**                     **/
 /**    Landing Page     **/
@@ -6,9 +19,6 @@
 #landing-container {
 	max-width: 1200px;
 	min-height: 100vh;
-	background: url("../img/bgnature.jpg");
-	background-size: 100% 100%;
-	background-color: #000; /* temporary */
 	display: grid;
 	grid-template-rows: 1vh auto auto auto 1vh;
 	grid-template-areas: 
@@ -28,6 +38,7 @@
 		margin: auto;
 		display: grid;
 		grid-area: imgland;
+		background: transparent;
 	}
 
 	.enter-buttons {
@@ -51,18 +62,43 @@
 /**                     **/
 /*************************/
 
-body {
-	padding-top: 60px;	
-}
-
 #logo {
 	width: 3vh;
 }
 
-.navbar-text a {
-	text-decoration: none;
-	color: #5D5D5D;
+.navbar-default {
+	background-color: rgba(0, 0, 0, 0.5);
+	border-color: rgb(15, 175, 167); 	
 }
+	.navbar-default .navbar-nav>li>a {
+		color: white;
+	}
+
+		.navbar-default .navbar-nav>li>a:hover {
+			font-weight: bolder;
+			color: white;
+			background-color: rgb(15, 175, 167);
+		}
+
+	.navbar-default .navbar-brand{
+		text-decoration: none;
+		color: white;
+		font-weight: bolder;
+	}
+
+		.navbar-default .navbar-brand:hover {
+			background-color: teal;
+			color: white;
+		}
+
+	.page-active {
+		background-color: teal;
+	}
+
+		.page-active:hover {
+			color: white;
+				
+		}
 
 #main-carousel {
 	width: 80%;
@@ -81,9 +117,44 @@ body {
 	grid-gap: 1vh;
 }
 
+.panel {
+	opacity: 0.8;
+}
+
+	/* .panel-default>.panel-heading {
+		background-color: rgba(15, 175, 167, 0.93);
+		color: black;
+	} */
+
+	
+.well {
+	opacity: 0.9;
+}
+
+footer  .well{
+	background-color: transparent;
+	color: white;
+	border-color: rgb(15, 175, 167);
+}
 /*************************/
 /**                     **/
 /**   Activity Page     **/
 /**                     **/
 /*************************/
 
+
+/*************************/
+/**                     **/
+/**   Officers Page     **/
+/**                     **/
+/*************************/
+
+.round-con {
+	width: 15vh;
+	height: 15vh;
+	border-radius: 50%;
+	background-color: white;
+	border: 1px solid gray;	
+	margin: 0 auto;
+	box-shadow: 5px 1px 20px 2px black;
+}
