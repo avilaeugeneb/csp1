@@ -1,0 +1,6 @@
+1. calendar of events 
+2. Landing page remake - jQuery flying texts
+3. navbar - darken on scroll
+4. footer - address , contact number, social media btns
+5. officers page -make caricatures.
+6. Member page- deprecate
