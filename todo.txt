@@ -1,4 +1,4 @@
-1. calendar of events 
+1. calendar of events - check
 2. Landing page remake - jQuery flying texts
 3. navbar - darken on scroll
 4. footer - address , contact number, social media btns
