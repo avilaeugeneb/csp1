@@ -6,8 +6,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
+	<!-- Font Awesome -->
+	<script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+
 	<!-- Google Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Do+Hyeon|Lobster|Pacifico" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Dosis|Jua" rel="stylesheet">
 
 	<!-- Import Bootstrap -->
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
@@ -89,203 +92,251 @@
 							<div class="panel-heading">
 								<div id="member-btns">
 									<button class="btn btn-primary btn-xs" type="button" data-toggle="collapse" data-target="#member-login" aria-expanded="false"
-									aria-controls="collapseExample">
-									Member Login
-								</button>
-								<button class="btn btn-primary btn-xs">Sign up</button>
+									 aria-controls="collapseExample">
+										Member Login
+									</button>
+									<button class="btn btn-primary btn-xs">Sign up</button>
+								</div>
+							</div>
+							<div class="panel-body collapse" id="member-login">
+
+								<form>
+
+									<div class="form-group">
+										<label for="username">User ID:</label>
+										<input type="text" class="form-control" id="username" placeholder="Enter User ID">
+									</div>
+
+									<div class="form-group">
+										<label for="password">User Pass:</label>
+										<input type="password" class="form-control" id="password" placeholder=" Enter User password">
+									</div>
+
+									<button type="submit" class="btn btn-primary">Login</button>
+								</form>
+								<!-- /endForm -->
+
+							</div>
+							<!-- /endFormPanel -->
+						</div>
+					</div>
+
+				</div>
+				<!-- /end-1stRow-1stCol-3rdRow -->
+
+				<div class="row">
+
+					<div class="col-md-12 col-sm-12">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h3 class="panel-title text-center">Calendar of Events</h3>
+							</div>
+							<div class="panel-body">
+								<!-- Calendar -->
+								<table>
+									<thead>
+										<tr>
+											<th class="arrow">
+												<a href="">◀</a>
+											</th>
+											<th colspan="5">
+												April 2018
+											</th>
+											<th class="arrow">
+												<a href="">▶</a>
+											</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th>Sun</th>
+											<th>Mon</th>
+											<th>Tue</th>
+											<th>Wed</th>
+											<th>Thu</th>
+											<th>Fri</th>
+											<th>Sat</th>
+										</tr>
+										<tr>
+											<td>1</td>
+											<td>2</td>
+											<td>3</td>
+											<td>4</td>
+											<td>5</td>
+											<td>6</td>
+											<td>7</td>
+										</tr>
+										<tr>
+											<td>8</td>
+											<td>9</td>
+											<td class="today">10</td>
+											<td class="tomorrow">11</td>
+											<td>12</td>
+											<td class="event">13</td>
+											<td>14</td>
+										</tr>
+										<tr>
+											<td>15</td>
+											<td>16</td>
+											<td>17</td>
+											<td>18</td>
+											<td>19</td>
+											<td>20</td>
+											<td>2</td>
+										</tr>
+										<tr>
+											<td>22</td>
+											<td class="last-week">23</td>
+											<td>24</td>
+											<td>25</td>
+											<td>26</td>
+											<td>27</td>
+											<td>28</td>
+										</tr>
+										<tr>
+											<td>29</td>
+											<td>30</td>
+											<td class="off">1</td>
+											<td class="off">2</td>
+											<td class="off">3</td>
+											<td class="off">4</td>
+											<td class="off">5</td>
+										</tr>
+										<tr>
+											<td class="off">6</td>
+											<td class="off">7</td>
+											<td class="off">8</td>
+											<td class="off">9</td>
+											<td class="off">10</td>
+											<td class="off">11</td>
+											<td class="off">12</td>
+										</tr>
+									</tbody>
+								</table>
+								<!-- /endCalendar -->
 							</div>
 						</div>
-						<div class="panel-body collapse" id="member-login">
-
-							<form>
-
-								<div class="form-group">
-									<label for="username">User ID:</label>
-									<input type="text" class="form-control" id="username" placeholder="Enter User ID">
-								</div>
-
-								<div class="form-group">
-									<label for="password">User Pass:</label>
-									<input type="password" class="form-control" id="password" placeholder=" Enter User password">
-								</div>
-
-								<button type="submit" class="btn btn-primary">Login</button>
-							</form>
-							<!-- /endForm -->
-
-						</div>
-						<!-- /endFormPanel -->
+						<!-- /end-panel -->
 					</div>
+
 				</div>
+				<!-- /end-2ndRow-1stCol-3rdRow -->
 
 			</div>
-			<!-- /end-1stRow-1stCol-3rdRow -->
+			<!-- /end-1stCol-3rdRow -->
 
-			<div class="row">
+			<div class="col-md-9 col-sm-9 col-xs-12">
 
-				<div class="col-md-12 col-sm-12">
-					<div class="panel panel-default">
-						<div class="panel-heading">
-							<h3 class="panel-title text-center">Calendar of Events</h3>
-						</div>
-						<div class="panel-body">
-							<!-- Calendar -->
-							<table>
-								<thead>
-									<tr>
-										<th class="arrow"><a href="">◀</a></th>
-										<th colspan="5">
-											April 2018
-										</th>
-										<th class="arrow"><a href="">▶</a></th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<th>Sun</th>
-										<th>Mon</th>
-										<th>Tue</th>
-										<th>Wed</th>
-										<th>Thu</th>
-										<th>Fri</th>
-										<th>Sat</th>
-									</tr>
-									<tr>
-										<td>1</td>
-										<td>2</td>
-										<td>3</td>
-										<td>4</td>
-										<td>5</td>
-										<td>6</td>
-										<td>7</td>
-									</tr>
-									<tr>
-										<td>8</td>
-										<td>9</td>
-										<td class="today">10</td>
-										<td class="tomorrow">11</td>
-										<td>12</td>
-										<td class="event">13</td>
-										<td>14</td>
-									</tr>
-									<tr>
-										<td>15</td>
-										<td>16</td>
-										<td>17</td>
-										<td>18</td>
-										<td>19</td>
-										<td>20</td>
-										<td>2</td>
-									</tr>
-									<tr>
-										<td>22</td>
-										<td class="last-week">23</td>
-										<td>24</td>
-										<td>25</td>
-										<td>26</td>
-										<td>27</td>
-										<td>28</td>
-									</tr>
-									<tr>
-										<td>29</td>
-										<td>30</td>
-										<td class="off">1</td>
-										<td class="off">2</td>
-										<td class="off">3</td>
-										<td class="off">4</td>
-										<td class="off">5</td>
-									</tr>
-									<tr>
-										<td class="off">6</td>
-										<td class="off">7</td>
-										<td class="off">8</td>
-										<td class="off">9</td>
-										<td class="off">10</td>
-										<td class="off">11</td>
-										<td class="off">12</td>
-									</tr>
-								</tbody>
-							</table> <!-- /endCalendar -->
-						</div>
-					</div> <!-- /end-panel -->
+				<div class="well">
+					<h2 class="text-center">History</h2>
+					<p>
+						A socio-civic organization that started as bird-watching group in 1987. First recognized as a student environmental socio-civic
+						organization in 1989.
+					</p>
+					<p>
+						The organization envisions and promote sustainable development in the Philippines. The organization advocates the need for
+						the management of the natural resources to the community-based, socially equitable, and scientifically sound. Haring
+						Ibon UPLB holds activities that aim to promote environmental awareness in and out of the university.
+					</p>
+
+					<hr>
+
+					<h2>Mission</h2>
+					<p>
+						The organization seeks to actively work and contribute to sustainable development by raising the national consciousness amongst
+						Filipinos.
+
+					</p>
+
+					<hr>
+
+					<h2>Vision</h2>
+					<p>
+						Haring Ibon UPLB's vision is sustainable development for the Philippines. This means creatively ensuring that "the needs
+						of the present are met without compromising the ability of the future generations to meet their own needs". (from the
+						World Commission on Environment and Development)
+					</p>
+
+					<h2>Objectives</h2>
+
+					<p>
+						The HARING-IBON UPLB shall contribute to a national development that is sustainable and socially just. It shall be the organizational
+						vehicle through which the students of the UPLB community can participate in the pursuance of the following:
+					</p>
+
+					<ol>
+						<li>Maintenance and/or restoration of ecological balance and a healthy environment</li>
+						<li>Conservation and sustainable development of natural resources</li>
+						<li>Promotion of social equity in the use of natural resources</li>
+						<li>Preservation of critical areas and endangered species of flora and fauna</li>
+						<li>Management of protected areas and wildlife</li>
+						<li>Management of waste and pollutants</li>
+						<li>Preservation of ethnic Filipino culture</li>
+						<li>Protection of people's right to a healthful ecology</li>
+						<li>Promotion of favorable change in values and attitude towards nature</li>
+					</ol>
 				</div>
+				<!-- /end-well-2ndCol-3rdRow -->
 
 			</div>
-			<!-- /end-2ndRow-1stCol-3rdRow -->
+			<!-- /end-2ndCol-3rdRow -->
 
 		</div>
-		<!-- /end-1stCol-3rdRow -->
-
-		<div class="col-md-9 col-sm-9 col-xs-12">
-
-			<div class="well">
-				<h2 class="text-center">History</h2>
-				<p>
-					A socio-civic organization that started as bird-watching group in 1987. First recognized as a student environmental socio-civic
-					organization in 1989.
-				</p>
-				<p>
-					The organization envisions and promote sustainable development in the Philippines. The organization advocates the need for
-					the management of the natural resources to the community-based, socially equitable, and scientifically sound. Haring
-					Ibon UPLB holds activities that aim to promote environmental awareness in and out of the university.
-				</p>
-
-				<hr>
-
-				<h2>Mission</h2>
-				<p>
-					The organization seeks to actively work and contribute to sustainable development by raising the national consciousness amongst Filipinos.
-
-				</p>
-
-				<hr>
-
-				<h2>Vision</h2>
-				<p>
-					Haring Ibon UPLB's vision is sustainable development for the Philippines. This means creatively ensuring that "the needs
-					of the present are met without compromising the ability of the future generations to meet their own needs". (from the
-					World Commission on Environment and Development)
-				</p>
-
-				<h2>Objectives</h2>
-
-				<p>
-					The HARING-IBON UPLB shall contribute to a national development that is sustainable and socially just. It shall be the organizational
-					vehicle through which the students of the UPLB community can participate in the pursuance of the following:
-				</p>
-
-				<ol>
-					<li>Maintenance and/or restoration of ecological balance and a healthy environment</li>
-					<li>Conservation and sustainable development of natural resources</li>
-					<li>Promotion of social equity in the use of natural resources</li>
-					<li>Preservation of critical areas and endangered species of flora and fauna</li>
-					<li>Management of protected areas and wildlife</li>
-					<li>Management of waste and pollutants</li>
-					<li>Preservation of ethnic Filipino culture</li>
-					<li>Protection of people's right to a healthful ecology</li>
-					<li>Promotion of favorable change in values and attitude towards nature</li>
-				</ol>
-			</div>
-			<!-- /end-well-2ndCol-3rdRow -->
-
-		</div>
-		<!-- /end-2ndCol-3rdRow -->
-
+		<!-- /endThirdRow -->
 	</div>
-	<!-- /endThirdRow -->
+	<!-- /endContainer -->
 
-	<div class="row">
-		<footer class="col-md-12 col-sm-12 col-xs-12">
-			<div class="well">
-				<p>Eugene Avila. Copyright &copy; 2018. All Contents are not for commercial use.</p>
-			</div>
-		</footer>
-	</div>
-	<!-- /endFourthRow -->
-
-</div>
-<!-- /endContainer -->
-
+	<footer id="grid-footer">
+		<section id="org-address">
+			<address>
+				<h5>Haring Ibon UPLB HQ</h5>
+				<p>#52 IBSLH Institute of Biology, CAS</p>
+				<p>University of the Philippines Los Baños 4071</p>
+				<p>Phone : (+63)997-997-6097</p>
+			</address>
+			<address>
+				<h5>Haring Ibon UPLB email:</h5>
+				<p>admin@haringibonuplb.com</p>
+			</address>
+		</section>
+		<section id="org-contacts">
+			<h4>Contact Us</h4>
+			<form action="" method="">
+				<div class="form-group">
+					<label for="name-c">Name:</label>
+					<input type="text" class="form-control" id="name-c" placeholder="Enter your name">
+				</div>
+				<div class="form-group">
+					<label for="email">Email address:</label>
+					<input type="email" class="form-control" id="email-c" placeholder="Enter your email">
+				</div>
+				<div class="form-group">
+					<label for="comments-c">Comments</label>
+					<textarea class="form-control" rows="3" placeholder="message here" id="comments-c"></textarea>
+				</div>
+				<button type="submit" class="btn btn-primary">Submit</button>
+			</form>
+		</section>
+		<section id="org-social">
+			<h4>Connect with Us!</h4>
+			<p>
+				<i class="fab fa-facebook-square"></i>
+				<a href="https://fb.com/HaringIbonUPLB">&nbsp;&nbsp;Facebook</a>
+			</p>
+			<p>
+				<i class="fab fa-twitter-square"></i>&nbsp;&nbsp;Twitter</p>
+			<p>
+				<i class="fab fa-instagram"></i>&nbsp;&nbsp;Instagram</p>
+			<p>
+				<i class="fab fa-reddit-square"></i>&nbsp;&nbsp;Reddit</p>
+		</section>
+		<section id="org-misc">
+			<h4>Terms of Use</h4>
+			<h4>Privacy Policy</h4>
+			<h4>Sitemap</h4>
+			<h4>Copyright Policy</h4>
+		</section>
+	</footer>
 
 
 	<!-- Import Bootstrap jQuery -->
@@ -294,7 +345,7 @@
 	<!-- Compiled plugins -->
 	<script src="assets/js/bootstrap.min.js"></script>
 	<script src="assets/js/script.js"></script>
-	
+
 </body>
 
 </html>
