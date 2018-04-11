@@ -1,5 +1,10 @@
-2. Landing page remake - jQuery flying texts
-5. officers page -make caricatures.
+1. Landing page remake - jQuery flying texts
+2. remove hover effects on mobile 
+3. content for activities page 
+4. modal on sign up page
+5. content for blog page
+6. remake portfolio
+
 
 QUOTES
 Leonardo - http://www.climateactionreserve.org/wp-content/uploads/2016/09/quotes-leo.png
@@ -12,9 +17,6 @@ https://www.climaterealityproject.org/blog/ten-times-al-gore-inspired-us-act-cli
 
 -------------------------------------
 Article
-1.Global warming
-https://climate.nasa.gov/causes/
-
 2. At the POles
 http://ocean.si.edu/ocean-news/climate-change-poles
 
