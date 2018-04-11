@@ -14,13 +14,23 @@
 /**    Home Page        **/
 /**                     **/
 /*************************/
+#main-carousel {
+	display: block;
+}
+
 #member-btns {
 	grid-template-columns: 1fr 1fr;
+}
+
+.well {
+	text-align: justify;
 }
 
 footer {
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 }
+
+
 /*************************/
 /**                     **/
 /**   Member's Page     **/

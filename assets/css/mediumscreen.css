@@ -10,6 +10,11 @@
 footer {
 	grid-template-columns: 1fr 1fr;
 }
+
+.well {
+	text-align: initial;
+}
+
 /*************************/
 /**                     **/
 /**   Member's Page     **/

@@ -19,7 +19,7 @@ h6,
 body {
 	padding-top: 70px;
 	background: linear-gradient( rgba(15, 175, 167, 0.6), #270303cc ), url("../img/haribon.jpg");
-	background-size: cover;
+	background-size: 100% 100%;
 	background-attachment: fixed;
 }
 
@@ -127,6 +127,7 @@ body {
 	width: 80%;
 	margin: auto;
 	margin-bottom: 2vh;
+	display: none;
 }
 
 	.carousel-inner>.item>img {
@@ -135,39 +136,27 @@ body {
 		margin: auto;
 	}
 
-#member-btns {
+div#member-btns {
 	display: grid;
 	grid-gap: 1vh;
 }
 
-	#member-btns .btn-primary:first-child {
+	div#member-btns .btn-primary,
+	div#member-login form .btn-primary{
 		background-color: transparent;
 		border-color: teal;
 		line-height: 5vh;
 	}
 
-		#member-btns .btn-primary:first-child:hover,
-		#member-btns .btn-primary:nth-child(2):hover,
-		#member-login form .btn-primary:hover {
+		div#member-btns .btn-primary:hover,
+		div#member-login form .btn-primary:hover {
 			background-color: rgb(15, 175, 167);
 			color: black;
 		}
 
-	#member-btns .btn-primary:nth-child(2) {
-	background-color: transparent;
-	border-color: teal;
-	line-height: 5vh;
-	}
-
-#member-login form {
+div#member-login form {
 	color: white;
 }
-
-	#member-login form .btn-primary {
-		background-color: transparent;
-		border-color: teal;
-		line-height: 5vh;
-	}
 
 .panel {
 	background-color: rgba(0, 0, 0, 0.6);
@@ -187,11 +176,53 @@ body {
 
 	
 .well {
-	background-color: rgba(0, 0, 0, 0.6);
+	background-color: rgba(0, 0, 0, 0.8);
 	color: white;
 	border: 0;
+	text-align: initial;
 }
 
+	.well img.blog-img {
+		width: 80%;
+		margin: 0 auto;
+		box-shadow: 3px -1px 20px 3px rgb(15, 175, 167);
+	}
+
+	.well p.lead {
+		text-decoration: underline;
+		text-decoration-color: teal;
+	}
+
+	.well mark {
+		background-color: teal;
+		color: black;
+		font-weight: bold;
+	}
+
+	.well ul {
+		list-style-type: none;
+	}
+		
+		.well ul li {
+			padding: 2vh;
+		}
+
+	.well button.btn[href="#show-more"] {
+		border: 0;
+		background-color: transparent;
+	}
+
+		.well button.btn:hover,
+		.well button.btn:active,
+		.well button.btn:focus {
+			color: teal;
+		}
+
+/*************************/
+/**                     **/
+/**   Footer Section    **/
+/**                     **/
+/*************************/
 
 footer {
 	background-color: #000;
@@ -200,10 +231,31 @@ footer {
 	grid-gap: 3vh;
 	padding: 2vh;
 }
-	section#org-social a {
+	footer a {
 		text-decoration: none;
 		color: white;
 	}
+
+		footer a:hover {
+			text-decoration: none;
+			color: teal;
+		}
+	textarea#comments-c {
+		resize: none;
+	}	
+/*************************/
+/**                     **/
+/**      About Page     **/
+/**                     **/
+/*************************/
+
+div.well#about-well img {
+	width: 50%;
+	margin: 0 auto;
+	filter: drop-shadow(5px 5px 10px #2C886C);
+}
+
+
 
 /*************************/
 /**                     **/
@@ -229,7 +281,7 @@ footer {
 	}
 
 		#img-well>img:hover {
-			filter: sepia(0%);
+			filter: drop-shadow(5px 5px 10px #2C886C) sepia(0%);
 			opacity: 0.7;
 		}
 
@@ -262,7 +314,14 @@ footer {
 	border: 1px solid gray;	
 	margin: 0 auto;
 	box-shadow: 3px 1px 12px #2C886C;
+	display: grid;
+	align-items: center;
+	justify-items: center;
 }
+
+	.round-con img {
+		width: 70%;
+	}
 
 /*************************/
 /**                     **/
@@ -280,12 +339,11 @@ table {
 
 
 table thead th {
-    border-radius: 1px;
     background-color: #37846F;
     color: white;
     font-size: 2vh;
     font-weight: bold;
-    padding: 8px 0;
+    padding: 8px 2px;
     text-align: center;
     text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.2);
 }
@@ -383,3 +441,18 @@ table tbody td.event:after {
     height: 4px;
     width: 4px;
 }
+
+/*************************/
+/**                     **/
+/**       Credits       **/
+/**                     **/
+/*************************/
+
+div.well#credit-well {
+	min-height: 80vh;
+}
+
+	div.well#credit-well a {
+		text-decoration: none;
+		color: teal;
+	}
