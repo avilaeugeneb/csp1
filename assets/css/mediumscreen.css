@@ -3,21 +3,7 @@
 /**    Home Page        **/
 /**                     **/
 /*************************/
-* {
-	font-size: 1.2rem;
-}
 
 footer {
 	grid-template-columns: 1fr 1fr;
 }
-
-.well {
-	text-align: initial;
-}
-
-/*************************/
-/**                     **/
-/**   Member's Page     **/
-/**                     **/
-/*************************/
-

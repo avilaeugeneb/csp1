@@ -4,7 +4,11 @@
 /**                     **/
 /*************************/
 
-.enter-buttons {
+div.well#landing-image {
+	width: 60%;
+}
+
+div.well#enter-buttons {
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 1fr;
 }
