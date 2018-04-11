@@ -82,7 +82,9 @@ body {
 
 .navbar-default {
 	background-color: transparent;
-	border: 0; 
+	border: 0;
+	transform: scale(0.94);
+		transition: transform 500ms linear; 
 }
 	.navbar-default .navbar-nav>li>a {
 		color: white;
@@ -117,9 +119,11 @@ body {
 		}
 	.navbar-fixed-top.scrolled {
 	  background-color: #000 !important;
-	  transition: background-color 500ms linear;
+	  	transition: background-color 500ms linear;
 	  box-shadow: 1px 5px 10px #2C886C;
-	  transition: box-shadow 500ms linear;
+	  	transition: box-shadow 500ms linear;
+	  transform: scale(1.0);
+	  	transition: transform 500ms linear;	
 	}
 
 
