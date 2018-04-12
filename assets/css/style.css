@@ -312,6 +312,37 @@ div.well#about-well img {
 /**                     **/
 /*************************/
 
+/* Image Gallery for activity */
+
+/* Image Gallery Grid Container */
+div#img-list01 {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(220px,auto));
+	grid-auto-rows: minmax(200px,auto);
+	grid-auto-flow: row dense;
+}
+
+	div#img-list01 section.mason-title {
+		background-color: #000;
+		color: white;
+		text-align: center;
+		font-size: 1.5em;
+	}
+
+	div#img-list01 section img {
+		object-fit: cover; /* image will cover whole section */
+		height: 100%;
+		width: 100%;
+	}
+
+		div#img-list01 section img:hover {
+			transform: scale(1.2);
+			box-shadow: 3px -1px 20px 3px rgb(15, 175, 167);
+			transition: transform 500ms linear;
+			z-index: 5;
+		}
+
+
 /*************************/
 /**                     **/
 /**   Member's Page     **/
