@@ -3,14 +3,31 @@
 /**    Landing Page     **/
 /**                     **/
 /*************************/
-
+#landing-container {
+	grid-template-rows: auto auto auto;
+	font-size: 1.2em;
+	grid-gap: 1vh;
+	width: 100vw;
+}
 div.well#landing-image {
 	width: 60%;
 }
 
+	div.well#landing-image div#landing-vid {
+		display: block;
+	}
+
 div.well#enter-buttons {
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 1fr;
+}
+
+	div.well#enter-buttons a {
+		font-size: 1.2em;
+	}
+
+div.panel#panel-disclaimer {
+	min-height: 2vh;
 }
 
 /*************************/
@@ -41,3 +58,20 @@ footer {
 /**                     **/
 /*************************/
 
+/*************************/
+/**                     **/
+/**   Officers Page     **/
+/**                     **/
+/*************************/
+
+/* Officer's Grid Container */
+
+section#officer-grid {
+	display: grid;
+	grid-template-areas: 
+	". . pres . ."
+	". vice . sec ."
+	"fin . edu . pub";
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-template-columns: repeat(5, 1fr);
+}

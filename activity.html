@@ -92,11 +92,64 @@
 						<div class="panel panel-default">
 							<div class="panel-heading">
 								<div id="member-btns">
+
 									<button class="btn btn-primary btn-xs" type="button" data-toggle="collapse" data-target="#member-login" aria-expanded="false"
 									    aria-controls="collapseExample">
 										Member Login
 									</button>
-									<button class="btn btn-primary btn-xs">Sign up</button>
+									
+									<!-- Modal button trigger  -->
+									<button class="btn btn-primary btn-xs" data-toggle="modal" data-target="#signup-modal">Sign up</button>
+
+									<!-- Modal -->
+									<div id="signup-modal" class="modal fade" role="dialog">
+										<div class="modal-dialog modal-sm">
+											 <!-- Modal content-->
+											 <div class="modal-content">
+
+											 	<div class="modal-header">
+											 		<button type="button" class="close" data-dismiss="modal">&times;</button>
+											 		 <h4 class="modal-title text-center">Register</h4>
+											 	</div>
+
+											 	<div class="modal-body">
+											 		<form action="" method="">
+											 			
+											 			<div class="form-group">
+											 				<label for="des-name">Username:</label>
+											 				<input type="text" class="form-control" id="des-name" placeholder="Enter desired username">
+											 			</div>
+
+											 			<div class="form-group">
+											 				<label for="des-pass">Password:</label>
+											 				<input type="password" class="form-control" id="des-pass" placeholder="Enter desired password">
+											 			</div>
+
+											 			<div class="form-group">
+											 				<label for="des-mail">Email:</label>
+											 				<input type="email" class="form-control" id="des-mail" placeholder="Email is required" required>
+											 			</div>
+
+											 			<div class="form-group">
+											 				<label for="des-batch">Batch Name:</label>
+											 				<input type="text" class="form-control" id="des-batch" placeholder="Batch Haribon" required>
+											 			</div>
+
+											 			<div class="form-group">
+											 				<label for="des-number">Mobile Number:</label>
+											 				<input type="tel" class="form-control" id="des-number">
+											 			</div>
+
+											 			<button type="submit" class="btn btn-primary" id="submit-modal">Submit</button>
+
+											 		</form>
+
+											 	</div>
+											 	<!-- /endform-ModalContainer -->
+											 </div>
+										</div>
+									</div>
+									<!-- /endModal-containsForm -->
 								</div>
 							</div>
 							<div class="panel-body collapse" id="member-login">

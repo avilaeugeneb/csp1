@@ -1,9 +1,13 @@
 1. Landing page remake - jQuery flying texts
+
 2. remove hover effects on mobile 
+
 3. content for activities page 
-4. modal on sign up page
-5. content for blog page
+
 6. remake portfolio
+
+
+
 
 
 QUOTES

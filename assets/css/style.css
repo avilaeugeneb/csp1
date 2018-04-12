@@ -27,7 +27,7 @@ h6,
 body {
 	padding-top: 70px; /* Space for Navbar */
 	background: linear-gradient( rgba(15, 175, 167, 0.6), #270303cc), url("../img/haribon.jpg");
-	background-size: 100% 100%;
+	background-size: cover;
 	background-attachment: fixed;
 	background-position: center;
 }
@@ -41,35 +41,38 @@ body {
 #landing-container {
 	max-width: 1200px;
 	display: grid;
-	grid-template-rows: 1vh auto auto auto 1vh;
-	grid-template-areas: 
-	"." 
-	"img-land"
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-template-areas:
+	"imgland"
 	"enterbtn"
-	"disclaim"
-	".";
+	"disclaim";
 	margin: auto;
 	margin-top: -70px; /* negates body's padding-top */
-	grid-gap: 2vh;
+	height: 100vh;
+	justify-items: center;
+	align-items: center;
 }
 
 	div.well#landing-image {
 		background: transparent;
-		width: 90%;
+		width: 100%;
 		text-align: center;
 		margin: 0 auto;
-		grid-area: img-land;
+		grid-area: imgland;
 		display: grid;
-		grid-gap: 1vh;
+	}
+
+	div.well#landing-image div#landing-vid {
+		display: none;
 	}
 
 	div.well#enter-buttons {
 		display: grid;
-		max-width: 90%;
 		margin: 0 auto;
 		grid-template-rows: 1fr 1fr;
-		grid-gap: 1vh;
 		grid-area: enterbtn;
+		padding: 2vh;
+		grid-gap: 3vh;
 	}
 
 		div.well#enter-buttons a.btn.btn-primary.btn-sm {
@@ -84,9 +87,15 @@ body {
 
 	div.panel#panel-disclaimer {
 		width: 100%;
-		margin: auto;
+		min-height: 25vh;
 		grid-area: disclaim;
+		margin: 0;
+		padding: 0;
+		font-size: 0.7em;
+		color: white;
+		align-self: end;
 	}
+
 
 /*************************/
 /**                     **/
@@ -151,7 +160,6 @@ nav.navbar-default {
 	.carousel-inner>.item>img {
 		width: 100%; 
 		height: 40vh;
-		margin: auto;
 	}
 
 /* User/Member Buttons */
@@ -176,6 +184,10 @@ div#member-btns {
 	div#member-login form {
 		color: white;
 	}
+
+		button#submit-modal {
+			float: right;
+		}
 
 /* Set universal panel style */
 .panel {
@@ -254,6 +266,7 @@ footer {
 	display: grid;
 	grid-gap: 3vh;
 	padding: 2vh;
+	min-width: 80vw;
 }
 
 	footer a {
@@ -269,6 +282,16 @@ footer {
 	textarea#comments-c {
 		resize: none;
 	}
+
+	footer .btn.btn-primary {
+		background-color: transparent;
+		font-weight: bold;
+	}
+
+		footer .btn.btn-primary:hover {
+			background-color: teal;
+			color: black;
+		}
 
 /*************************/
 /**                     **/
@@ -301,28 +324,28 @@ div.well#img-well {
 	grid-gap: 2vh;
 }
 
-div.well#img-well > img {
-	filter: sepia(100%);
-}
-
-	div.well#img-well > img:hover {
-		filter: drop-shadow(5px 5px 10px #2C886C) sepia(0%);
-		opacity: 0.7;
+	div.well#img-well > img {
+		filter: sepia(100%);
 	}
 
-	div.well#img-well img.img-modal01 {
-		cursor: pointer;
-		transition: 0.3s;
-	}
-
-	/* Universal model content */
-	.modal-content {
-		background-color: rgba(0, 0, 0, 0.6);
-	}
-
-		.modal-content .modal-header button.close {
-			color: yellow;
+		div.well#img-well > img:hover {
+			filter: drop-shadow(5px 5px 10px #2C886C) sepia(0%);
+			opacity: 0.7;
 		}
+
+		div.well#img-well img.img-modal01 {
+			cursor: pointer;
+			transition: 0.3s;
+		}
+
+		/* Universal model content */
+		.modal-content {
+			background-color: rgba(0, 0, 0, 0.6);
+		}
+
+			.modal-content .modal-header button.close {
+				color: yellow;
+			}
 
 /*************************/
 /**                     **/
@@ -330,24 +353,89 @@ div.well#img-well > img {
 /**                     **/
 /*************************/
 
-/* White Round Containers */
-div.round-con {
-	width: 15vh;
-	height: 15vh;
-	border-radius: 50%;
-	background-color: white;
-	border: 1px solid gray;
-	margin: 0 auto;
-	box-shadow: 3px 1px 12px #2C886C;
-	display: grid;
-	align-items: center;
-	justify-items: center;
+/*Officer's Well Container*/
+
+div.well#officer-well h3 {
+	font-size: 1.2em;
 }
 
-	/* Officer's Avatar */
-	div.round-con > img.img-responsive {
-		width: 70%;
-	}
+/* Officer's Grid Container */
+
+section#officer-grid {
+	display: grid;
+	grid-template-areas: 
+	"pres"
+	"vice"
+	"sec"
+	"fin"
+	"edu"
+	"pub";
+	grid-template-rows: repeat(6, 1fr); 
+}
+	
+	/*May be omitted - doing nothing important*/
+	/*section.officer-box {
+		display: grid;
+	}*/
+
+		section.officer-box.pres-box {
+			grid-area: pres;
+		}
+
+		section.officer-box.vice-box {
+			grid-area: vice;
+		}
+
+		section.officer-box.sec-box {
+			grid-area: sec;
+		}
+
+		section.officer-box.fin-box {
+			grid-area: fin;
+		}
+
+		section.officer-box.edu-box {
+			grid-area: edu;
+		}
+
+		section.officer-box.pub-box {
+			grid-area: pub;
+		}
+
+
+
+			/* White Round Containers */
+			div.round-con {
+				width: 15vh;
+				height: 15vh;
+				border-radius: 50%;
+				background-color: white;
+				border: 1px solid gray;
+				margin: 0 auto;
+				box-shadow: 3px 1px 12px #2C886C;
+				display: grid;
+				align-items: center;
+				justify-items: center;
+			}
+
+				/* Officer's Avatar */
+				div.round-con > img.img-responsive {
+					width: 70%;
+				}
+/*************************/
+/**                     **/
+/**        Blog         **/
+/**                     **/
+/*************************/
+
+section.art-img {
+	text-align: center;
+}
+
+section.art-img img {
+	width: 50%;
+}
+
 
 /*************************/
 /**                     **/

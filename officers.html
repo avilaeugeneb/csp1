@@ -87,11 +87,64 @@
 						<div class="panel panel-default">
 							<div class="panel-heading">
 								<div id="member-btns">
+
 									<button class="btn btn-primary btn-xs" type="button" data-toggle="collapse" data-target="#member-login" aria-expanded="false"
 									    aria-controls="collapseExample">
 										Member Login
 									</button>
-									<button class="btn btn-primary btn-xs">Sign up</button>
+
+									<!-- Modal button trigger  -->
+									<button class="btn btn-primary btn-xs" data-toggle="modal" data-target="#signup-modal">Sign up</button>
+
+									<!-- Modal -->
+									<div id="signup-modal" class="modal fade" role="dialog">
+										<div class="modal-dialog modal-sm">
+											 <!-- Modal content-->
+											 <div class="modal-content">
+
+											 	<div class="modal-header">
+											 		<button type="button" class="close" data-dismiss="modal">&times;</button>
+											 		 <h4 class="modal-title text-center">Register</h4>
+											 	</div>
+
+											 	<div class="modal-body">
+											 		<form action="" method="">
+											 			
+											 			<div class="form-group">
+											 				<label for="des-name">Username:</label>
+											 				<input type="text" class="form-control" id="des-name" placeholder="Enter desired username">
+											 			</div>
+
+											 			<div class="form-group">
+											 				<label for="des-pass">Password:</label>
+											 				<input type="password" class="form-control" id="des-pass" placeholder="Enter desired password">
+											 			</div>
+
+											 			<div class="form-group">
+											 				<label for="des-mail">Email:</label>
+											 				<input type="email" class="form-control" id="des-mail" placeholder="Email is required" required>
+											 			</div>
+
+											 			<div class="form-group">
+											 				<label for="des-batch">Batch Name:</label>
+											 				<input type="text" class="form-control" id="des-batch" placeholder="Batch Haribon" required>
+											 			</div>
+
+											 			<div class="form-group">
+											 				<label for="des-number">Mobile Number:</label>
+											 				<input type="tel" class="form-control" id="des-number">
+											 			</div>
+
+											 			<button type="submit" class="btn btn-primary" id="submit-modal">Submit</button>
+
+											 		</form>
+
+											 	</div>
+											 	<!-- /endform-ModalContainer -->
+											 </div>
+										</div>
+									</div>
+									<!-- /endModal-containsForm -->
 								</div>
 							</div>
 							<div class="panel-body collapse" id="member-login">
@@ -115,6 +168,7 @@
 							</div>
 							<!-- /endFormPanel -->
 						</div>
+
 					</div>
 
 				</div>
@@ -223,68 +277,66 @@
 
 			<div class="col-md-9 col-sm-9 col-xs-12">
 
-				<div class="well">
-					<div class="row">
+				<div class="well" id="officer-well">
+					<h1 class="text-center">Officers</h1>
 
-						<div class="col-md-12 col-sm-12 col-xs-12">
-							<h1 class="text-center">Officers</h1>
-						</div>
+					<section id="officer-grid">
 
-						<div class="col-md-12 col-sm-12 col-xs-12">
+						<section class="officer-box pres-box">
 							<div class="round-con">
 								<img class="img-responsive" src="assets/img/eagle.png"></img>
 							</div>
 							<h3 class="text-center">President</h3>
 							<p class="text-center">Haring Ibon</p>
 							<p class="text-center">BS Biology '16</p>
-						</div>
+						</section>
 
-						<div class="col-md-6 col-sm-6 col-xs-12">
+						<section class="officer-box vice-box">
 							<div class="round-con">
 								<img class="img-responsive" src="assets/img/owl-5.png"></img>
 							</div>
 							<h3 class="text-center">Vice President</h3>
 							<p class="text-center">Mimi the Owl</p>
 							<p class="text-center">BS Forestry '18</p>
-						</div>
+						</section>
 
-						<div class="col-md-6 col-sm-6 col-xs-12">
+						<section class="officer-box sec-box">
 							<div class="round-con">
 								<img class="img-responsive" src="assets/img/owl-2.png"></img>
 							</div>
 							<h3 class="text-center">Secretary</h3>
 							<p class="text-center">Lulu the Dark Owl</p>
 							<p class="text-center">BA Com Arts '17</p>
-						</div>
+						</section>
 
-						<div class="col-md-4 col-sm-4 col-xs-12">
+						<section class="officer-box fin-box">
 							<div class="round-con">
 								<img class="img-responsive" src="assets/img/owl-3.png"></img>
 							</div>
 							<h3 class="text-center">Financial Committee Head</h3>
 							<p class="text-center">Jeff the Blue Bird</p>
 							<p class="text-center">BS Mathematics '17</p>
-						</div>
+						</section>
 
-						<div class="col-md-4 col-sm-4 col-xs-12">
+						<section class="officer-box edu-box">
 							<div class="round-con">
 								<img class="img-responsive" src="assets/img/owl-4.png"></img>
 							</div>
 							<h3 class="text-center">Educational Committee Head</h3>
 							<p class="text-center">Boy Brown</p>
 							<p class="text-center">BS Agriculture '18</p>
-						</div>
+						</section>
 
-						<div class="col-md-4 col-sm-4 col-xs-12">
+						<section class="officer-box pub-box">
 							<div class="round-con">
 								<img class="img-responsive" src="assets/img/owl-1.png"></img>
 							</div>
 							<h3 class="text-center">Publicity Committee Head</h3>
 							<p class="text-center">Janine Maester</p>
 							<p class="text-center">BS DevCom '16</p>
-						</div>
+						</section>
 
-					</div>
+					</section>
 				</div>
 				<!-- /end-well-2ndCol-3rdRow -->
 
