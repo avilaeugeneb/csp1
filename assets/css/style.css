@@ -616,3 +616,27 @@ table tbody td.event:after {
 	height: 4px;
 	width: 4px;
 }
+
+/* Bottom to top Nav Button */
+
+nav#bottom-to-top {
+	position: fixed;
+		bottom: 5vh;
+		right: 5vw;
+		z-index: 10;
+}
+
+	nav#bottom-to-top button#btnbot-top {
+		display: none;
+		border: 0;
+		outline: 0;
+		background-color: teal;
+		color: black;
+		font-size: 3vh;
+		border-radius: 15%;
+	}
+
+		nav#bottom-to-top button#btnbot-top:hover {
+			background-color: black;
+			color: teal;
+		}
