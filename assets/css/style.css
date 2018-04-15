@@ -369,7 +369,7 @@ div.well#img-well {
 			transition: 0.3s;
 		}
 
-		/* Universal model content */
+		/* Universal model style */
 		.modal-content {
 			background-color: rgba(0, 0, 0, 0.6);
 		}
